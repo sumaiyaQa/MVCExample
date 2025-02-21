@@ -40,6 +40,10 @@ public class Controller2 extends JFrame
         refreshViews = new JButton("Refresh views");
         window.add(refreshViews);
         refreshViews.addActionListener(this);
+        
+        incB = new JButton("Increment B"); // update -- added a button for a second counter
+        window.add(incB);
+        incB.addActionListener(this); 
         // Create views
         view3 = new View3(this, model);
         window.add(view3);
